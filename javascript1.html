@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+.box1{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+    min-width: 400px;
+    
+    padding-top: 15px;
+    padding-left: 10px;
+    
+    display:inline-flex;
+
+}
+
+.color{
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    background-color: chocolate;
+    margin-left: 10px;
+   
+}
+.colorname{
+    height: 40px;
+    width: auto;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.midpart{
+    margin: 200px  550px;
+    height: auto;
+    width: auto;
+    background-color:rgb(172, 85, 243);
+    padding-bottom: 10px;
+    border-radius: 10px;
+    
+    
+}
+</style>
+    </head>
+    <body>
+            
+        <div class="midpart">
+            <div class="box1">
+            <div >
+            Background Color:
+            </div>
+            <div class="colorname">Colorname</div>
+        </div>
+        <br>
+            <button class="color" id="red">Red</button>
+            <button class="color" id="yellow">Yellow</button>
+            <button class="color" id="green">Green</button>
+            <button class="color" id="pink">Pink</button>
+            <button class="color" id="orange">Orange</button>
+        </div>
+
+        
+   
+
+<script>
+   const element1=document.getElementById("red");
+   element1.addEventListener("click", colorRed);
+   function colorRed(){
+    document.getElementsByTagName("body")[0].style.backgroundColor="Red";
+    document.querySelector(".colorname").innerHTML="Red";
+   }
+   const element2=document.getElementById("yellow");
+   element2.addEventListener("click",colorYellow);
+
+   function colorYellow(){
+    document.getElementsByTagName("body")[0].style.backgroundColor="rgb(239, 228, 18)";
+    document.querySelector(".colorname").innerHTML="Yellow";
+   }
+
+   const element3=document.getElementById("pink");
+   element3.addEventListener("click",colorPink);
+
+   function colorPink(){
+    document.getElementsByTagName("body")[0].style.backgroundColor="rgb(205, 49, 236)";
+    document.querySelector(".colorname").innerHTML="Pink";
+   }
+
+   const element4=document.getElementById("green");
+   element4.addEventListener("click",colorGreen);
+
+   function colorGreen(){
+    document.getElementsByTagName("body")[0].style.backgroundColor="rgb(32, 195, 46)";
+    document.querySelector(".colorname").innerHTML="Green";
+   }
+
+   
+
+   const element5=document.getElementById("orange");
+   element5.addEventListener("click",colorOrange);
+
+   function colorOrange(){
+    document.getElementsByTagName('body')[0].style.backgroundColor="rgb(239, 141, 11)";
+    document.querySelector(".colorname").innerHTML="Orange";
+   }
+</script>
+    </body>
+</html>
